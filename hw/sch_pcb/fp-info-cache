@@ -1,4 +1,4 @@
-19658258450573733
+19697257943169798
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -57518,6 +57518,20 @@ TF
 0
 0
 0
+MLAB_LOGA
+TF 14x6,6
+
+
+0
+0
+0
+MLAB_LOGA
+UST
+
+
+0
+0
+0
 MLAB_SAW
 ABRACON_AFS
 
@@ -57617,6 +57631,13 @@ SMD-0603
 2
 2
 Mlab_C
+SMD-0805
+
+
+0
+2
+2
+Mlab_C
 TantalC_SizeA_Reflow
 Tantal Cap. , Size A, EIA-3216, Reflow,
 Tantal Cap. , Size A, EIA-3216, reflow,
@@ -57687,6 +57708,13 @@ sd card
 13
 10
 Mlab_CON
+IDC381-8-110
+
+
+0
+8
+8
+Mlab_CON
 MCC-SD
 SD card connector, top mount, SMT (http://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F2041021%7FB%7Fpdf%7FEnglish%7FENG_CD_2041021_B_C_2041021_B.pdf%7F2041021-4)
 sd card
@@ -57700,6 +57728,20 @@ MCSP-Q-08-A-SG
 0
 13
 10
+Mlab_CON
+MCX
+
+
+0
+5
+2
+Mlab_CON
+MCX_Molex_73415-1061
+https://www.molex.com/pdm_docs/sd/734151061_sd.pdf
+
+0
+3
+2
 Mlab_CON
 RJ12GLP-AMP(RJ12)
 
@@ -57960,6 +58002,13 @@ DFN 0.5
 20
 13
 Mlab_IO
+DL1020
+
+
+0
+24
+8
+Mlab_IO
 DPAK-TO-252-2Lead
 TO-252-2Lead DPAK
 
@@ -58127,6 +58176,13 @@ Integrated Circuit
 0
 13
 13
+Mlab_IO
+SON50P200X200X95-9N-D
+QFN-9
+Integrated Circuit
+0
+12
+9
 Mlab_IO
 SOP-8_EP_3.9x4.9mm_Pitch1.27mm
 8-Lead Plastic Small Outline (SN) - Narrow, 3.90 mm Body [SOIC] (see Microchip Packaging Specification 00000049BS.pdf)
@@ -58337,6 +58393,20 @@ Inductor
 0
 2
 2
+Mlab_L
+PCC-M0530M-LP
+Cívky řady PCC-M0530M-LP
+
+0
+2
+2
+Mlab_L
+SMD-0805
+
+
+0
+2
+2
 Mlab_Mechanical
 BMI-S-210-F
 
@@ -58372,6 +58442,20 @@ pin header straight 2x01
 0
 2
 2
+Mlab_Mechanical
+dira_0.4mm
+
+
+0
+0
+0
+Mlab_Mechanical
+dira_2mm
+
+
+0
+0
+0
 Mlab_Mechanical
 dira_3mm
 
