@@ -1,4 +1,4 @@
-(kicad_sch (version 20210406) (generator eeschema)
+(kicad_sch (version 20210621) (generator eeschema)
 
   (uuid 8226f2ba-4656-489b-aa2f-ec7bc9db29c8)
 
@@ -670,7 +670,7 @@
           (number "21" (effects (font (size 1.27 1.27))))
         )
         (pin input line (at -12.7 0 0) (length 2.54)
-          (name "~CS" (effects (font (size 1.27 1.27))))
+          (name "~{CS}" (effects (font (size 1.27 1.27))))
           (number "22" (effects (font (size 1.27 1.27))))
         )
         (pin input line (at -12.7 2.54 0) (length 2.54)
@@ -3041,7 +3041,7 @@
     (property "Footprint" "Mlab_IO:SDP3x" (id 2) (at 180.975 53.34 0)
       (effects (font (size 1.524 1.524)) hide)
     )
-    (property "Datasheet" "" (id 3) (at 180.975 53.34 0)
+    (property "Datasheet" "https://docs.rs-online.com/3cff/0900766b81643b7b.pdf" (id 3) (at 180.975 53.34 0)
       (effects (font (size 1.524 1.524)) hide)
     )
     (property "UST_ID" "5c70984812875079b91f8bd0" (id 4) (at 180.975 53.34 0)
