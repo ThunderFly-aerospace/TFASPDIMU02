@@ -1,25 +1,25 @@
-# TFASPDIMU01 - sdp3x differental pressure sensor and IMU 9-axis unit
+# TFASPDIMU02 - sdp3x differential pressure sensor and IMU 9-axis unit
 
 ![.github/workflows/KiCad.yml](https://github.com/ThunderFly-aerospace/TFASPDIMU01/workflows/.github/workflows/KiCad.yml/badge.svg)
 
-ThunderFly TFASPDIMU01 is SPI/I2C sensor board equipped with a differential pressure sensor (Senserion [SDP3x](https://www.sensirion.com/sdp3x/)) and 9-axis motion tracking sensor ([ICM-20948](https://invensense.tdk.com/products/motion-tracking/9-axis/icm-20948/)). Board is equipped with 7pin JST-GH connector. The sensor board is designed for multiple uses. It can be used as a self-adjusting anemometer [WINDGAUGE03](https://github.com/mlab-modules/WINDGAUGE03) or as an airspeed sensor for UAVs with optional function as the external magnetometer.
+ThunderFly TFASPDIMU02 is I2C bus sensor board equipped with a differential pressure sensor ([Sensirion SDP3x](https://www.sensirion.com/sdp3x/)) and 9-axis motion tracking sensor ([ICM-20948](https://invensense.tdk.com/products/motion-tracking/9-axis/icm-20948/)). Board is equipped with 4pin JST-GH connector. The sensor board is designed for multiple uses. It can be used as a self-adjusting anemometer [WINDGAUGE03](https://github.com/mlab-modules/WINDGAUGE03) or as an airspeed sensor for UAVs with optional function as the external magnetometer. The featured use (after firmware improvement) could be an angle of attract sensor or vibration (Flutter) detector.
 
-![TFASPDIMU01 PCB](doc/img/TFASPDIMU01_top_big.png)
+![TFASPDIMU02 PCB](doc/img/TFASPDIMU02A_top_big.png)
 
 ## Specification
  * Type: Differential and 9-axis motion sensor board
  * Mass: 3 g
- * Size: 36 x 14 mm
+ * Size: 30 x 15 mm
  * Power: +5 V
- * Connection: 7pin JST-GH connector, custom pinout
+ * Connection: 4pin JST-GH connector PixHawk compatible
 
 **SDP3x**
- * Range: +/- 125/500 Pa (depending on exact sensor type)
+ * Range: +/- 125/500/1500 Pa (depending on exact sensor type)
  * Excellent accuracy and repeatability, even below one Pascal
  * No zero-point offset, no temperature drift
  * Calibrated and temperature compensated
  * Fast sampling time of 2kHz at 16 bit resolution
- * I2C address: 0x21 (d33)
+ * I2C address: 0x21 (0d33), could be changed by JP2 and/or resorderig the R10 value.
 
  **ICM-20948**
  * 3-axis gyroscope, 3-axis accelerometer, 3-axis compass (magnetometer)
@@ -27,8 +27,7 @@ ThunderFly TFASPDIMU01 is SPI/I2C sensor board equipped with a differential pres
  * On-Chip 16-bit ADCs and Programmable Filters
  * 7 MHz SPI or 400 kHz Fast Mode I²C
  * Digital temperature sensor
- * Default I2C address: 0x68 (0d104), can be changed to 0x69 (0d105) by moving the resistor R2->R1. 
-
+ * Default I2C address: 0x68 (0d104), can be changed to 0x69 (0d105) by adjusting the JP1.
 
 ## Example of uses
 
@@ -49,6 +48,7 @@ More details about this solution is available in the repository [TFSLOT01](https
 Symmetric variant of TFSLOT sensor for different mounting options [TFPIPE01](https://github.com/ThunderFly-aerospace/TFPIPE01).
 
 ### TFVENTUFO - innovative anemometer
+
 This anemometer should also based on venturi effect. Thanks to an clever design, it will measure the wind speed from all directions (without knowing the direction).
 
 ### Angle of Attack sensor
@@ -58,45 +58,45 @@ In case of mounting on slip-ring bearing the sensor could sense air AoA of the v
 
 ## Hardware
 
-![TFASPDIMU01 sensor](doc/img/TFASPDIMU01.jpg)
+![TFASPDIMU02 PCB](doc/img/TFASPDIMU02A_bot_big.png)
 
-### Eletronic schema
+### Electronics schema
 
-Full schema is avialible in [PDF](/hw/sch_pcb/TFASPDIMU01.pdf)
-![schema](/hw/cam/docs/TFASPDIMU01_schematic.svg)
+Full schema is available in [PDF](/hw/sch_pcb/TFASPDIMU02A.pdf)
+![TFASPDIMU02 schema](/hw/cam/docs/TFASPDIMU02A_schematic.svg)
 
-### Hardware layout
+### PCB dimensions
 
+![TFASPDIMU02 dimensions](doc/img/TFASPDIMU02A_dimensions.png)
 
-** IMG - technical draft **
+Pressure sensor connections are aligned to center of PCB width.
 
+### I2C connector pinout
 
-### Pinout
-|Pin #| I2C | SPI  |
-| --- |:---:|:----:|
-| 1   | +5V | +5V  |
-| 2   | SCL | SCK  |
-| 3   | --  | MISO |
-| 4   | SDA | MOSI |
-| 5   | --  | CS   |
-| 6   | INT | INT  |
-| 7   | GND | GND  |
-> Due to the possible wider use of the sensor, a standard pixhawk pinout is not used.
+|Signal | Pixhawk Color | ThunderFly color |
+|--------|------------------|---------------------|
+| +5V  | Red             |   ![red](https://user-images.githubusercontent.com/5196729/102204855-ab1c3300-3eca-11eb-8083-646d633e3aef.png) Red                   |
+| SCL  | Black          |  ![yellow](https://user-images.githubusercontent.com/5196729/102204908-bc653f80-3eca-11eb-9a1d-a02ea5481c03.png) Yellow                |
+| SDA  | Black          |  ![green](https://user-images.githubusercontent.com/5196729/102205114-04846200-3ecb-11eb-8eb8-251c7e564707.png) Green                |
+| GND | Black          | ![black](https://user-images.githubusercontent.com/5196729/102204896-b8d1b880-3eca-11eb-8b73-656cac9104e4.png) Black                 |
 
 
-#### PixHawk autopilot cable
+#### PixHawk autopilot connection cable
 
+To increase the transmission quality, it is mandatory to create twisted-pairs of SDA,GND and SCL,+5V on the cable (as shown in the image)
 
-To increase the transmission quality, it is recommended to create pairs SDA,GND and SCL,+5V on the cable (as shown in image)
+- 10 twists for each pair  SCL/+5V and SDA/GND per 30cm cable length
+- 4 turns/twists of pairs per 30cm cable length.
 
-![I2C jstgh](doc/img/jstgh_i2c.jpg)
+![ThunderFly I2C jstgh](doc/img/jstgh_i2c.jpg)
 
-| TFASPDIMU01 Pin | Sigal | Pixhawk | Color |
+| TFASPDIMU02 Pin | Signal | Pixhawk | Color |
 | ---------------:|:-----:|:-------:|-------|
 |   1             | +5V   |  1      | Red   |
 |   2             | SCL   |  2      | Yellow|
-|   4             | SDA   |  3      | Green |
-|   7             | GND   |  4      | Black |
+|   3             | SDA   |  3      | Green |
+|   4             | GND   |  4      | Black |
+
 > Pixhawk pinout is listed according to the [Pixhawk connector standard](https://github.com/pixhawk/Pixhawk-Standards/blob/master/DS-009%20Pixhawk%20Connector%20Standard.pdf).
 
 ## Usage
