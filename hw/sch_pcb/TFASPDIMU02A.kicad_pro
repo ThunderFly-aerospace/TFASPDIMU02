@@ -411,7 +411,7 @@
       }
     ],
     "meta": {
-      "version": 1
+      "version": 0
     },
     "net_colors": null
   },
@@ -421,7 +421,7 @@
       "idf": "",
       "netlist": "WINDGAUGE03A_PCB01A.net",
       "specctra_dsn": "",
-      "step": "",
+      "step": "TFASPDIMU02A.step",
       "vrml": ""
     },
     "page_layout_descr_file": "module.kicad_wks"
