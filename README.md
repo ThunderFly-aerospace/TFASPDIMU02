@@ -4,7 +4,7 @@
 
 ThunderFly TFASPDIMU02 is I2C bus sensor board equipped with a differential pressure sensor ([Sensirion SDP3x](https://www.sensirion.com/sdp3x/)) and 9-axis motion tracking sensor ([ICM-20948](https://invensense.tdk.com/products/motion-tracking/9-axis/icm-20948/)). Board is equipped with 4pin JST-GH connector. The sensor board is designed for multiple uses. It can be used as a self-adjusting anemometer [WINDGAUGE03](https://github.com/mlab-modules/WINDGAUGE03) or as an airspeed sensor for UAVs with optional function as the external magnetometer. The featured use (after firmware improvement) could be an angle of attract sensor or vibration (Flutter) detector.
 
-![TFASPDIMU02 PCB](doc/img/TFASPDIMU02A_top_big.png)
+![TFASPDIMU02 PCB](doc/img/TFASPDIMU01_2.jpg)
 
 ## Specification
  * Type: Differential and 9-axis motion sensor board
@@ -39,7 +39,7 @@ Ground control station anemometer [WINDGAUGE03](https://github.com/mlab-modules/
 
 Our [TFSLOT](https://github.com/ThunderFly-aerospace/TFSLOT01) senzor is an airspeed sensor for use mainly on UAV. Due to 3D printed case it is possible to optimalize part according to the location of sensor on UAV and tune their characteristics. First use of this sensor was on our autogyro [TF-G2](https://github.com/ThunderFly-aerospace/TF-G2/).
 
-![TFSLOT01 sensor](https://github.com/ThunderFly-aerospace/TFSLOT01/blob/TFSLOT01/doc/img/TFSLOT01A.jpg)
+![TFSLOT01 sensor](https://raw.githubusercontent.com/ThunderFly-aerospace/TFSLOT01/TFSLOT01/doc/img/TFSLOT_2.jpg)
 
 More details about this solution is available in the repository [TFSLOT01](https://github.com/ThunderFly-aerospace/TFSLOT01).
 
