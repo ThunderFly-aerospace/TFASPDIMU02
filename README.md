@@ -1,4 +1,4 @@
-# TFASPDIMU02 - Differential pressure sensor and IMU 9-axis unit
+# TFASPDIMU02 - Differential pressure sensor and IMU
 
 ![.github/workflows/KiCad.yml](https://github.com/ThunderFly-aerospace/TFASPDIMU01/workflows/.github/workflows/KiCad.yml/badge.svg)
 
@@ -15,7 +15,7 @@ TFASPDIMU is commercially available from [ThunderFly s.r.o.](https://www.thunder
  * Power: +5 V
  * Connection: 4pin JST-GH connector PixHawk compatible
 
-**SDP3x**
+**SDP3x differential pressure sensor**
  * Range: +/- 125/500/1500 Pa (depending on exact sensor type)
  * Excellent accuracy and repeatability, even below one Pascal
  * No zero-point offset, no temperature drift
@@ -23,7 +23,7 @@ TFASPDIMU is commercially available from [ThunderFly s.r.o.](https://www.thunder
  * Fast sampling time of 2kHz at 16 bit resolution
  * I2C address: 0x21 (0d33), could be changed by JP2 and/or resorderig the R10 value.
 
- **ICM-20948**
+ **ICM-20948 9-axis IMU unit**
  * 3-axis gyroscope, 3-axis accelerometer, 3-axis compass (magnetometer)
  * Onboard Digital Motion Processor (DMP)
  * On-Chip 16-bit ADCs and Programmable Filters
@@ -33,9 +33,9 @@ TFASPDIMU is commercially available from [ThunderFly s.r.o.](https://www.thunder
 
 ## Example of uses
 
-### WINDGUAGE01
+### WINDGUAGE - weather vane sensor 
 
-Ground control station anemometer [WINDGAUGE03](https://github.com/mlab-modules/WINDGAUGE03)
+Ground control station anemometer [WINDGAUGE03](https://github.com/mlab-modules/WINDGAUGE03) is based on TFASPDIMU sensor which is used for both wind direction and wind speed measerement. 
 
 ### TFSLOT01 - UAV airspeed sensor
 
