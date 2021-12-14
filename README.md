@@ -1,4 +1,4 @@
-# TFASPDIMU02 - sdp3x differential pressure sensor and IMU 9-axis unit
+# TFASPDIMU02 - Differential pressure sensor and IMU 9-axis unit
 
 ![.github/workflows/KiCad.yml](https://github.com/ThunderFly-aerospace/TFASPDIMU01/workflows/.github/workflows/KiCad.yml/badge.svg)
 
