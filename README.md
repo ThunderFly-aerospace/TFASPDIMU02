@@ -2,7 +2,7 @@
 
 ![.github/workflows/KiCad.yml](https://github.com/ThunderFly-aerospace/TFASPDIMU01/workflows/.github/workflows/KiCad.yml/badge.svg)
 
-ThunderFly TFASPDIMU02 is I2C bus sensor board equipped with a differential pressure sensor ([Sensirion SDP3x](https://www.sensirion.com/sdp3x/)) and 9-axis motion tracking sensor ([ICM-20948](https://invensense.tdk.com/products/motion-tracking/9-axis/icm-20948/)). Board is equipped with 4pin JST-GH connector. The sensor board is designed for multiple uses. It can be used as a self-adjusting anemometer [WINDGAUGE03](https://github.com/mlab-modules/WINDGAUGE03) or as an airspeed sensor for UAVs with optional function as the external magnetometer. The featured use (after firmware improvement) could be an angle of attract sensor or vibration (Flutter) detector.
+ThunderFly TFASPDIMU02 is I2C bus sensor board equipped with a differential pressure sensor ([Sensirion SDP3x](https://www.sensirion.com/sdp3x/)) and 9-axis motion tracking sensor ([ICM-20948](https://invensense.tdk.com/products/motion-tracking/9-axis/icm-20948/)). Board is equipped with 4pin JST-GH connector. The sensor board is designed for multiple uses. It can be used as a self-adjusting anemometer [WINDGAUGE03](https://github.com/mlab-modules/WINDGAUGE03) or as an airspeed sensor for UAVs with optional function as the external magnetometer. The featured use (after firmware improvement) could be an angle of attract sensor, stall detector or vibration (Flutter) detector.
 
 ![TFASPDIMU02 PCB](doc/img/TFASPDIMU01_2.jpg)
 
@@ -107,14 +107,17 @@ To increase the transmission quality, it is mandatory to create twisted-pairs of
 For reading data from the sensor, we have prepared a python script in PyMLAB library that uses the pySMBus to readout data. It can be used directly from a computer with a corresponding converter (for example MLAB [USBI2C01A](https://wiki.mlab.cz/doku.php?id=cs:usbi2c)) or with one-board computers (Odroid, raspberry and similar) that have own smbus output.
 
 #### Calibration vertification
+
 Calibration can be verified by mounting of an anemometer to car roof and comparing it to speed obtained from GPS (gpsd). This needs to be done in windless weather.
 
 ### PX4
-> We are now working on implementation of driver into PX4 stack.
+
+> There exists a [pull-request of modified SDP33 driver into PX4 stack](https://github.com/PX4/PX4-Autopilot/pull/18593).
 
 Main usage of this sensor is as airspeed sensor. It can be also used as an external magnetometer and thermometer.
 
 ### Ardupilot
+
 We are currently unable to implement the sensor in the Ardupilot flight stack. However, we will be happy to provide assistance with implementation. You can [contact us](https://www.thunderfly.cz/contact-us.html)
 
 #### configuration
