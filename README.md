@@ -51,12 +51,15 @@ Symmetric variant of TFSLOT sensor for different mounting options [TFPIPE01](htt
 
 ### TFVENTUFO - innovative anemometer
 
-This anemometer should also based on venturi effect. Thanks to an clever design, it will measure the wind speed from all directions (without knowing the direction).
+This anemometer also based on venturi effect. Thanks to an clever design, it will measure the wind speed from all directions (without knowing the direction).
 
 ### Angle of Attack sensor
 
 In case of mounting on slip-ring bearing the sensor could sense air AoA of the vehicle.
 
+### Stall detector
+
+The venturi geometry could also be inverted therefore the pressure ports looks in open airflow. That results in ability to detect stall on wings by detecting absence of pressure difference and increasing of pressure fluctuations on the wing sulface. 
 
 ## Hardware
 
