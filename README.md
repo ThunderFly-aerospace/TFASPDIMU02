@@ -16,7 +16,7 @@ TFASPDIMU is commercially available from [ThunderFly s.r.o.](https://www.thunder
  * Connection: 4pin JST-GH connector PixHawk compatible
 
 **SDP3x differential pressure sensor**
- * Range: +/- 125/500/1500 Pa (depending on exact sensor type)
+ * Range: +/- 125/500/1500 Pa (depending on exact sensor type [SDP33 by default](https://sensirion.com/media/documents/6B7302AA/6375F33C/DP_DS_SDP33_D1.pdf))
  * Excellent accuracy and repeatability, even below one Pascal
  * No zero-point offset, no temperature drift
  * Calibrated and temperature-compensated
