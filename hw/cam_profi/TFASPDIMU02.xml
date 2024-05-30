@@ -2,18 +2,18 @@
 <export version="E">
   <design>
     <source>/github/workspace/hw/sch_pcb/TFASPDIMU02.kicad_sch</source>
-    <date>Thu May 30 20:06:40 2024</date>
+    <date>Thu May 30 22:38:10 2024</date>
     <tool>Eeschema 7.0.11+1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
-        <title>TFASPDIMU01A</title>
+        <title>TFASPDIMU01B</title>
         <company>ThunderFly s.r.o.</company>
-        <rev>A</rev>
-        <date>2021-04-05</date>
+        <rev>B</rev>
+        <date>2024-05-31</date>
         <source>TFASPDIMU02.kicad_sch</source>
         <comment number="1" value="Differential pressure and  IMU \n for airspeed sensing of UAVs"/>
         <comment number="2" value=""/>
-        <comment number="3" value="jacho &lt;info@thunderfly.cz&gt;"/>
+        <comment number="3" value="kaklik &lt;info@thunderfly.cz&gt;"/>
         <comment number="4" value="GPL 3.0"/>
         <comment number="5" value=""/>
         <comment number="6" value=""/>
@@ -232,6 +232,28 @@
       <property name="Sheetfile" value="TFASPDIMU02.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>003c2e1f-2229-48f0-ae09-9a19eabda06e</tstamps>
+    </comp>
+    <comp ref="FID1">
+      <value>Fiducial</value>
+      <footprint>Fiducial:Fiducial_1mm_Mask2mm</footprint>
+      <libsource lib="Mechanical" part="Fiducial" description="Fiducial Marker"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TFASPDIMU02.kicad_sch"/>
+      <property name="ki_description" value="Fiducial Marker"/>
+      <property name="ki_keywords" value="fiducial marker"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8cf70208-51e6-4f3f-a4a6-6cdf15eaaac3</tstamps>
+    </comp>
+    <comp ref="FID2">
+      <value>Fiducial</value>
+      <footprint>Fiducial:Fiducial_1mm_Mask2mm</footprint>
+      <libsource lib="Mechanical" part="Fiducial" description="Fiducial Marker"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TFASPDIMU02.kicad_sch"/>
+      <property name="ki_description" value="Fiducial Marker"/>
+      <property name="ki_keywords" value="fiducial marker"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>40c1a929-5070-4af2-8359-3765f319911b</tstamps>
     </comp>
     <comp ref="J1">
       <value>SM04B-GHS-TB</value>
@@ -702,6 +724,18 @@
         <field name="Footprint">Mlab_Mechanical:dira_3mm</field>
       </fields>
     </libpart>
+    <libpart lib="Mechanical" part="Fiducial">
+      <description>Fiducial Marker</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Fiducial*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">FID</field>
+        <field name="Value">Fiducial</field>
+        <field name="Datasheet">~</field>
+      </fields>
+    </libpart>
     <libpart lib="Regulator_Linear" part="MIC5504-1.8YM5">
       <description>300mA Low-dropout Voltage Regulator, Vout 1.8V, Vin up to 5.5V, SOT-23</description>
       <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf</docs>
@@ -791,6 +825,9 @@
     </library>
     <library logical="Jumper">
       <uri>/usr/share/kicad/symbols//Jumper.kicad_sym</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>/usr/share/kicad/symbols//Mechanical.kicad_sym</uri>
     </library>
     <library logical="Regulator_Linear">
       <uri>/usr/share/kicad/symbols//Regulator_Linear.kicad_sym</uri>
