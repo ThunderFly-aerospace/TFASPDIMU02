@@ -1,0 +1,15 @@
+Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet,ust_id
+1,Unpolarized capacitor,C,C1C2C3C4C9C10C12C13,100nF,C_0402_1005Metric,8,~,5c70984812875079b91f8bdb
+2,Unpolarized capacitor,C,C5C6C7C8,1uF,C_0402_1005Metric,4,~,610cff5e1287500165a96ff9
+3,Unpolarized capacitor,C,C11,10uF,C_0402_1005Metric,1,~,610d01671287500165a97012
+4,,D_ZENER,D2,BZX585-B5V6.115,D_SOD-523,1,,60879d38128750769ee58e48
+5,1x05 2.54 mm pitch header,SM04B-GHS-TB,J1,SM04B-GHS-TB,JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal,1,,5c86273d1287500b4e0280be
+6,,HOLE_TF,M1M2M3M7,HOLE_TF,dira_3mm,4,,
+7,Resistor,R,R1R11,75R,R_0402_1005Metric,2,~,610d02e21287500165a97051
+8,Resistor,R,R2R3R10,2k7,R_0402_1005Metric,3,~,610d02801287500165a9703c
+9,Resistor,R,R4R5R6R7R8R9,10k,R_0402_1005Metric,6,~,5c70984512875079b91f894c
+10,"InvenSense 9-Axis Motion Sensor, Accelerometer, Gyroscope, Compass, I2C/SPI, QFN-24",ICM-20948,U2,ICM-20948,InvenSense_QFN-24_3x3mm_P0.4mm,1,http://www.invensense.com/wp-content/uploads/2016/06/DS-000189-ICM-20948-v1.3.pdf,5c725a431287500b4e112ef5
+11,"300mA Low-dropout Voltage Regulator, Vout 1.8V, Vin up to 5.5V, SOT-23",MIC5504-1.8YM5,U5,MIC5504-1.8YM5-TR,SOT-23-5,1,http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf,5c7256781287500b4e112eba
+12,"300mA Low-dropout Voltage Regulator, Vout 3.3V, Vin up to 5.5V, SOT-23",MIC5504-3.3YM5,U4,MIC5504-3.3YM5-TR,SOT-23-5,1,http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf,5c7255e81287500b4e112ea2
+13,,SDP3x,U1,SDP3x,SDP3x,1,https://docs.rs-online.com/3cff/0900766b81643b7b.pdf,5e32e1111287502a337d0b08
+14,"Level-Translating I2C Bus Buffer/Repeater 0.54mA Current Source, VSSOP-8",TCA9800,U3U6,TCA9617A,TSSOP-8_3x3mm_P0.65mm,2,https://www.nxp.com/docs/en/data-sheet/PCA9617A.pdf,610d03ad1287500165a97076
