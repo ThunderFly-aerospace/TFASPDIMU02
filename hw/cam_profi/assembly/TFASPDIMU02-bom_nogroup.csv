@@ -11,5 +11,5 @@ Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet
 10,"InvenSense 9-Axis Motion Sensor, Accelerometer, Gyroscope, Compass, I2C/SPI, QFN-24",ICM-20948,U2,ICM-20948,InvenSense_QFN-24_3x3mm_P0.4mm,1,http://www.invensense.com/wp-content/uploads/2016/06/DS-000189-ICM-20948-v1.3.pdf,5c725a431287500b4e112ef5
 11,"300mA Low-dropout Voltage Regulator, Vout 1.8V, Vin up to 5.5V, SOT-23",MIC5504-1.8YM5,U5,MIC5504-1.8YM5-TR,SOT-23-5,1,http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf,5c7256781287500b4e112eba
 12,"300mA Low-dropout Voltage Regulator, Vout 3.3V, Vin up to 5.5V, SOT-23",MIC5504-3.3YM5,U4,MIC5504-3.3YM5-TR,SOT-23-5,1,http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf,5c7255e81287500b4e112ea2
-13,,SDP3x,U1,SDP3x,SDP3x,1,https://docs.rs-online.com/3cff/0900766b81643b7b.pdf,5e32e1111287502a337d0b08
-14,"Level-Translating I2C Bus Buffer/Repeater 0.54mA Current Source, VSSOP-8",TCA9800,U3U6,TCA9617A,VSSOP-8_3.0x3.0mm_P0.65mm,2,http://www.ti.com/lit/ds/symlink/tca9800.pdf,610d03ad1287500165a97076
+13,"Level-Translating I2C Bus Buffer/Repeater, TSSOP-8",PCA9617A,U3U6,PCA9617A,TSSOP-8_3x3mm_P0.65mm,2,https://www.nxp.com/docs/en/data-sheet/PCA9617A.pdf,610d03ad1287500165a97076
+14,,SDP3x,U1,SDP3x,SDP3x,1,https://docs.rs-online.com/3cff/0900766b81643b7b.pdf,5e32e1111287502a337d0b08

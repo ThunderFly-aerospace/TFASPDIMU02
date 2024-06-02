@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/github/workspace/hw/sch_pcb/TFASPDIMU02.kicad_sch</source>
-    <date>Sun Jun  2 16:06:12 2024</date>
+    <date>Sun Jun  2 23:15:18 2024</date>
     <tool>Eeschema 7.0.11+1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -529,17 +529,17 @@
       <tstamps>00000000-0000-0000-0000-00005c5c5b62</tstamps>
     </comp>
     <comp ref="U3">
-      <value>TCA9617A</value>
-      <footprint>Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm</footprint>
-      <datasheet>http://www.ti.com/lit/ds/symlink/tca9800.pdf</datasheet>
+      <value>PCA9617A</value>
+      <footprint>Package_SO:TSSOP-8_3x3mm_P0.65mm</footprint>
+      <datasheet>https://www.nxp.com/docs/en/data-sheet/PCA9617A.pdf</datasheet>
       <fields>
         <field name="UST_ID">610d03ad1287500165a97076</field>
       </fields>
-      <libsource lib="Interface" part="TCA9800" description="Level-Translating I2C Bus Buffer/Repeater 0.54mA Current Source, VSSOP-8"/>
+      <libsource lib="MLAB_IO" part="PCA9617A" description="Level-Translating I2C Bus Buffer/Repeater, TSSOP-8"/>
       <property name="UST_ID" value="610d03ad1287500165a97076"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFASPDIMU02.kicad_sch"/>
-      <property name="ki_description" value="Level-Translating I2C Bus Buffer/Repeater 0.54mA Current Source, VSSOP-8"/>
+      <property name="ki_description" value="Level-Translating I2C Bus Buffer/Repeater, TSSOP-8"/>
       <property name="ki_keywords" value="I2C buffer repeater"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>b8d22c5d-e3cf-4f8c-a30f-26a07a427ba9</tstamps>
@@ -577,17 +577,17 @@
       <tstamps>00000000-0000-0000-0000-00005c6128ed</tstamps>
     </comp>
     <comp ref="U6">
-      <value>TCA9617A</value>
-      <footprint>Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm</footprint>
-      <datasheet>http://www.ti.com/lit/ds/symlink/tca9800.pdf</datasheet>
+      <value>PCA9617A</value>
+      <footprint>Package_SO:TSSOP-8_3x3mm_P0.65mm</footprint>
+      <datasheet>https://www.nxp.com/docs/en/data-sheet/PCA9617A.pdf</datasheet>
       <fields>
         <field name="UST_ID">610d03ad1287500165a97076</field>
       </fields>
-      <libsource lib="Interface" part="TCA9800" description="Level-Translating I2C Bus Buffer/Repeater 0.54mA Current Source, VSSOP-8"/>
+      <libsource lib="MLAB_IO" part="PCA9617A" description="Level-Translating I2C Bus Buffer/Repeater, TSSOP-8"/>
       <property name="UST_ID" value="610d03ad1287500165a97076"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFASPDIMU02.kicad_sch"/>
-      <property name="ki_description" value="Level-Translating I2C Bus Buffer/Repeater 0.54mA Current Source, VSSOP-8"/>
+      <property name="ki_description" value="Level-Translating I2C Bus Buffer/Repeater, TSSOP-8"/>
       <property name="ki_keywords" value="I2C buffer repeater"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>3946a5b6-009e-4cd2-915a-6468d11bb9f6</tstamps>
@@ -624,29 +624,6 @@
       <pins>
         <pin num="1" name="" type="passive"/>
         <pin num="2" name="" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="Interface" part="TCA9800">
-      <description>Level-Translating I2C Bus Buffer/Repeater 0.54mA Current Source, VSSOP-8</description>
-      <docs>http://www.ti.com/lit/ds/symlink/tca9800.pdf</docs>
-      <footprints>
-        <fp>VSSOP*3.0x3.0mm*P0.65mm*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">U</field>
-        <field name="Value">TCA9800</field>
-        <field name="Footprint">Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm</field>
-        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/tca9800.pdf</field>
-      </fields>
-      <pins>
-        <pin num="1" name="VCCA" type="power_in"/>
-        <pin num="2" name="SCLA" type="bidirectional"/>
-        <pin num="3" name="SDAA" type="bidirectional"/>
-        <pin num="4" name="GND" type="power_in"/>
-        <pin num="5" name="EN" type="input"/>
-        <pin num="6" name="SDAB" type="bidirectional"/>
-        <pin num="7" name="SCLB" type="bidirectional"/>
-        <pin num="8" name="VCCB" type="power_in"/>
       </pins>
     </libpart>
     <libpart lib="Jumper" part="SolderJumper_3_Bridged12">
@@ -694,6 +671,30 @@
       <pins>
         <pin num="1" name="K" type="passive"/>
         <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MLAB_IO" part="PCA9617A">
+      <description>Level-Translating I2C Bus Buffer/Repeater, TSSOP-8</description>
+      <docs>https://www.nxp.com/docs/en/data-sheet/PCA9617A.pdf</docs>
+      <footprints>
+        <fp>VSSOP*3.0x3.0mm*P0.65mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U3</field>
+        <field name="Value">PCA9617A</field>
+        <field name="Footprint">Package_SO:TSSOP-8_3x3mm_P0.65mm</field>
+        <field name="Datasheet">https://www.nxp.com/docs/en/data-sheet/PCA9617A.pdf</field>
+        <field name="UST_ID">610d03ad1287500165a97076</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VCCA" type="power_in"/>
+        <pin num="2" name="SCLA" type="bidirectional"/>
+        <pin num="3" name="SDAA" type="bidirectional"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="EN" type="input"/>
+        <pin num="6" name="SDAB" type="bidirectional"/>
+        <pin num="7" name="SCLB" type="bidirectional"/>
+        <pin num="8" name="VCCB" type="power_in"/>
       </pins>
     </libpart>
     <libpart lib="MLAB_IO" part="SDP3x">
@@ -819,9 +820,6 @@
   <libraries>
     <library logical="Device">
       <uri>/usr/share/kicad/symbols//Device.kicad_sym</uri>
-    </library>
-    <library logical="Interface">
-      <uri>/usr/share/kicad/symbols//Interface.kicad_sym</uri>
     </library>
     <library logical="Jumper">
       <uri>/usr/share/kicad/symbols//Jumper.kicad_sym</uri>
