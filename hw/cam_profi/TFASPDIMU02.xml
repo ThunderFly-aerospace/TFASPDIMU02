@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/github/workspace/hw/sch_pcb/TFASPDIMU02.kicad_sch</source>
-    <date>Thu May 30 22:38:10 2024</date>
+    <date>Sun Jun  2 16:06:12 2024</date>
     <tool>Eeschema 7.0.11+1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -11,7 +11,7 @@
         <rev>B</rev>
         <date>2024-05-31</date>
         <source>TFASPDIMU02.kicad_sch</source>
-        <comment number="1" value="Differential pressure and  IMU \n for airspeed sensing of UAVs"/>
+        <comment number="1" value="Differential pressure and  IMU \nfor airspeed sensing of UAVs"/>
         <comment number="2" value=""/>
         <comment number="3" value="kaklik &lt;info@thunderfly.cz&gt;"/>
         <comment number="4" value="GPL 3.0"/>
@@ -530,8 +530,8 @@
     </comp>
     <comp ref="U3">
       <value>TCA9617A</value>
-      <footprint>Package_SO:TSSOP-8_3x3mm_P0.65mm</footprint>
-      <datasheet>https://www.nxp.com/docs/en/data-sheet/PCA9617A.pdf</datasheet>
+      <footprint>Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/tca9800.pdf</datasheet>
       <fields>
         <field name="UST_ID">610d03ad1287500165a97076</field>
       </fields>
@@ -578,8 +578,8 @@
     </comp>
     <comp ref="U6">
       <value>TCA9617A</value>
-      <footprint>Package_SO:TSSOP-8_3x3mm_P0.65mm</footprint>
-      <datasheet>https://www.nxp.com/docs/en/data-sheet/PCA9617A.pdf</datasheet>
+      <footprint>Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/tca9800.pdf</datasheet>
       <fields>
         <field name="UST_ID">610d03ad1287500165a97076</field>
       </fields>
@@ -662,7 +662,7 @@
       </fields>
       <pins>
         <pin num="1" name="A" type="passive"/>
-        <pin num="2" name="C" type="input"/>
+        <pin num="2" name="C" type="passive"/>
         <pin num="3" name="B" type="passive"/>
       </pins>
     </libpart>
@@ -853,7 +853,7 @@
       <node ref="U5" pin="5" pinfunction="VOUT" pintype="power_out"/>
       <node ref="U6" pin="1" pinfunction="VCCA" pintype="power_in"/>
     </net>
-    <net code="2" name="+3V3">
+    <net code="2" name="+3.3V">
       <node ref="C1" pin="1" pintype="passive"/>
       <node ref="C10" pin="1" pintype="passive"/>
       <node ref="C13" pin="1" pintype="passive"/>
@@ -947,7 +947,7 @@
       <node ref="U6" pin="4" pinfunction="GND" pintype="power_in"/>
     </net>
     <net code="11" name="Net-(JP1-C)">
-      <node ref="JP1" pin="2" pinfunction="C" pintype="input"/>
+      <node ref="JP1" pin="2" pinfunction="C" pintype="passive"/>
       <node ref="U2" pin="9" pinfunction="SDO/AD0" pintype="bidirectional"/>
     </net>
     <net code="12" name="Net-(JP2-B)">
@@ -955,7 +955,7 @@
       <node ref="R10" pin="1" pintype="passive"/>
     </net>
     <net code="13" name="Net-(JP2-C)">
-      <node ref="JP2" pin="2" pinfunction="C" pintype="input"/>
+      <node ref="JP2" pin="2" pinfunction="C" pintype="passive"/>
       <node ref="U1" pin="9" pinfunction="ADDR" pintype="unspecified"/>
     </net>
     <net code="14" name="Net-(U1-SCL)">

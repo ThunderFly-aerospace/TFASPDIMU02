@@ -81,7 +81,7 @@ Defined tracks:
 Used tracks:
 
 - 0.2 mm (8 mils) (37) defined: yes
-- 0.3 mm (12 mils) (171) defined: yes
+- 0.3 mm (12 mils) (169) defined: yes
 - 0.4 mm (16 mils) (20) defined: yes
 - 0.5 mm (20 mils) (2) defined: yes
 
@@ -115,7 +115,7 @@ The stencil thickness is  0.12 mm.
 
 | Side   | Pads with paste | Area [mm²] | Paste [g] |
 |--------|-----------------|------------|-----------|
-| Total  |             124 |      62.50 |      0.31 |
+| Total  |             124 |      65.90 |      0.33 |
 
 Note: this is just an approximation to the theoretical value. Margins of the solder mask and waste aren't computed.
 
