@@ -1,6 +1,6 @@
 # TFASPDIMU02 - Differential pressure sensor and IMU
 
-![.github/workflows/KiCad.yml](https://github.com/ThunderFly-aerospace/TFASPDIMU01/workflows/.github/workflows/KiCad.yml/badge.svg)
+[![Kicad - production files generator](https://github.com/ThunderFly-aerospace/TFASPDIMU02/actions/workflows/kicad_outputs.yml/badge.svg)](https://github.com/ThunderFly-aerospace/TFASPDIMU02/actions/workflows/kicad_outputs.yml)
 
 ThunderFly TFASPDIMU02 is I2C bus sensor board equipped with a differential pressure sensor ([Sensirion SDP3x](https://www.sensirion.com/sdp3x/)) and 9-axis motion tracking sensor ([ICM-20948](https://invensense.tdk.com/products/motion-tracking/9-axis/icm-20948/)). The board is equipped with a 4-pin JST-GH connector. The sensor board is designed for multiple uses. It can be used as a self-adjusting anemometer [WINDGAUGE03](https://github.com/mlab-modules/WINDGAUGE03) or as an airspeed sensor for UAVs with optional function as the external magnetometer. The featured use (after firmware improvement) could be an angle of attract sensor, stall detector, or vibration (Flutter) detector.
 
@@ -39,7 +39,7 @@ Ground control station anemometer [WINDGAUGE03](https://github.com/mlab-modules/
 
 ### TFSLOT01 - UAV airspeed sensor
 
-Our [TFSLOT](https://github.com/ThunderFly-aerospace/TFSLOT01) sensor is an airspeed sensor for use mainly on UAVs. Due to the 3D printed case, it is possible to optimize housing according to the location of the sensor on the UAV and tune its characteristics. The first use of this sensor was on our autogyro [TF-G2](https://github.com/ThunderFly-aerospace/TF-G2/).
+Our [TFSLOT](https://github.com/ThunderFly-aerospace/TFSLOT01) sensor is an airspeed sensor for use mainly on UAVs. Due to the 3D printed case, optimizing housing according to the sensor's location on the UAV and tuning its characteristics is possible. The first use of this sensor was on our autogyro [TF-G2](https://github.com/ThunderFly-aerospace/TF-G2/).
 
 ![TFSLOT01 sensor](https://raw.githubusercontent.com/ThunderFly-aerospace/TFSLOT01/TFSLOT01/doc/img/TFSLOT_2.jpg)
 
@@ -103,14 +103,14 @@ For reading data from the sensor, we have prepared a Python script in the [PyMLA
 
 #### Calibration verification
 
-Calibration can be verified by mounting an anemometer to the car roof and comparing it to speed obtained from GPS (gpsd). This needs to be done in windless weather.
+Calibration can be verified by mounting an anemometer to the car roof and comparing it to GNSS speed. This needs to be done in windless weather.
 
 ### PX4
 
 > There exists a [pull-request of modified SDP33 driver into PX4 stack](https://github.com/PX4/PX4-Autopilot/pull/18593).
 
-The main use of this sensor is as an airspeed sensor. It can be also used as an external magnetometer and thermometer.
+The main use of this sensor is as an airspeed sensor. It can also be used as an external magnetometer and thermometer.
 
 ### Ardupilot
 
-We are currently unable to implement the sensor in the Ardupilot flight stack. However, we will be happy to provide assistance with implementation. You can [contact us](https://www.thunderfly.cz/contact-us.html)
+We are currently unable to implement the sensor in the Ardupilot flight stack. However, we will be happy to assist with implementation. You can [contact us](https://www.thunderfly.cz/contact-us.html)
