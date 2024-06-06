@@ -1,8 +1,8 @@
 Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
 "C1","100nF","C_0402_1005Metric",126.6190,-104.2670,0.0000,bottom
 "C2","100nF","C_0402_1005Metric",133.4770,-95.3770,180.0000,bottom
-"C3","100nF","C_0402_1005Metric",137.7950,-97.3100,90.0000,bottom
-"C4","100nF","C_0402_1005Metric",136.2710,-95.2500,0.0000,bottom
+"C3","100nF","C_0402_1005Metric",137.7696,-97.1296,90.0000,bottom
+"C4","100nF","C_0402_1005Metric",136.2202,-95.3262,0.0000,bottom
 "C5","1uF","C_0402_1005Metric",146.0754,-106.1212,90.0000,bottom
 "C6","1uF","C_0402_1005Metric",143.3322,-94.3864,-90.0000,bottom
 "C7","1uF","C_0402_1005Metric",140.2080,-105.4100,-90.0000,bottom
@@ -11,19 +11,19 @@ Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
 "C10","100nF","C_0402_1005Metric",132.7150,-101.6000,0.0000,bottom
 "C11","10uF","C_0402_1005Metric",147.1930,-106.1212,-90.0000,bottom
 "C12","100nF","C_0402_1005Metric",140.2080,-103.1240,90.0000,bottom
-"C13","100nF","C_0402_1005Metric",144.6530,-102.9970,-90.0000,bottom
+"C13","100nF","C_0402_1005Metric",144.5260,-102.9462,-90.0000,bottom
 "D1","GREEN","LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder",146.6850,-94.2340,0.0000,bottom
 "D2","BZX585-B5V6.115","D_SOD-523",149.7838,-94.2340,0.0000,bottom
 "FID1","Fiducial","Fiducial_1mm_Mask2mm",128.5240,-94.2086,180.0000,bottom
 "FID2","Fiducial","Fiducial_1mm_Mask2mm",149.8854,-106.0450,180.0000,bottom
-"J1","SM04B-GHS-TB","JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal",148.8440,-100.1960,-90.0000,bottom
+"J1","SM04B-GHS-TB","JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal",148.6660,-100.1960,-90.0000,bottom
 "M1","HOLE_TF","dira_3mm",134.1660,-107.6960,0.0000,top
 "M2","HOLE_TF","dira_3mm",124.1660,-107.6960,0.0000,top
 "M3","HOLE_TF","dira_3mm",124.1660,-92.6960,0.0000,top
 "M7","HOLE_TF","dira_3mm",134.1660,-92.6960,0.0000,top
 "R1","75R","R_0402_1005Metric",141.4780,-102.9970,-90.0000,bottom
 "R2","2k7","R_0402_1005Metric",143.3830,-102.9970,-90.0000,bottom
-"R3","2k7","R_0402_1005Metric",139.7000,-97.6630,0.0000,bottom
+"R3","2k7","R_0402_1005Metric",139.8016,-97.7392,0.0000,bottom
 "R4","10k","R_0402_1005Metric",138.5570,-99.4410,-90.0000,bottom
 "R5","10k","R_0402_1005Metric",138.5570,-101.6000,90.0000,bottom
 "R6","10k","R_0402_1005Metric",127.0000,-105.9180,-90.0000,bottom
@@ -31,7 +31,7 @@ Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
 "R8","10k","R_0402_1005Metric",138.0490,-104.9020,180.0000,bottom
 "R9","10k","R_0402_1005Metric",138.0490,-103.7590,180.0000,bottom
 "R10","2k7","R_0402_1005Metric",123.3170,-104.3940,90.0000,bottom
-"R11","75R","R_0402_1005Metric",142.7480,-97.6630,180.0000,bottom
+"R11","75R","R_0402_1005Metric",142.6210,-97.6884,180.0000,bottom
 "R12","180R","R_0402_1005Metric",144.8562,-96.1390,-90.0000,bottom
 "U1","SDP3x","SDP3x",127.0660,-99.5460,180.0000,bottom
 "U2","ICM-20948","InvenSense_QFN-24_3x3mm_P0.4mm",134.8740,-98.1710,0.0000,bottom

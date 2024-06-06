@@ -5,7 +5,7 @@ Board size: 30.0x15.0 mm (1.18x0.59 inches)
 - This is the size of the rectangle that contains the board
 - Thickness: 1.6 mm (63 mils)
 - Material: FR4
-- Finish: None
+- Finish: HAL lead-free
 - Layers: 2
 - Copper thickness: 35 µm
 
@@ -66,7 +66,7 @@ Eurocircuits class: 4B
 Components count: (SMD/THT)
 
 - Top: 0/4 (THT)
-- Bottom: 35/1 (SMD + THT)
+- Bottom: 36/0 (SMD)
 
 Defined tracks:
 
@@ -80,9 +80,9 @@ Defined tracks:
 
 Used tracks:
 
-- 0.2 mm (8 mils) (37) defined: yes
-- 0.3 mm (12 mils) (180) defined: yes
-- 0.4 mm (16 mils) (22) defined: yes
+- 0.2 mm (8 mils) (39) defined: yes
+- 0.3 mm (12 mils) (184) defined: yes
+- 0.4 mm (16 mils) (23) defined: yes
 - 0.5 mm (20 mils) (3) defined: yes
 
 Defined vias:
@@ -115,7 +115,7 @@ The stencil thickness is  0.12 mm.
 
 | Side   | Pads with paste | Area [mm²] | Paste [g] |
 |--------|-----------------|------------|-----------|
-| Total  |             128 |      65.04 |      0.32 |
+| Total  |             128 |      65.00 |      0.32 |
 
 Note: this is just an approximation to the theoretical value. Margins of the solder mask and waste aren't computed.
 
