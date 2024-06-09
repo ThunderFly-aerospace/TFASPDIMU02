@@ -208,9 +208,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      "pin_not_driven|2044700|457200|332e65a4-a6ef-4dfa-b4b2-44e4958d1f37|00000000-0000-0000-0000-000000000000|||"
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
