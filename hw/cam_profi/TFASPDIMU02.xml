@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/github/workspace/hw/sch_pcb/TFASPDIMU02.kicad_sch</source>
-    <date>Sun Jun  9 20:57:36 2024</date>
+    <date>Sun Jun  9 21:07:45 2024</date>
     <tool>Eeschema 7.0.11+1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -253,8 +253,10 @@
       <value>Fiducial</value>
       <footprint>Fiducial:Fiducial_1mm_Mask2mm</footprint>
       <libsource lib="Mechanical" part="Fiducial" description="Fiducial Marker"/>
+      <property name="UST_ID" value=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFASPDIMU02.kicad_sch"/>
+      <property name="exclude_from_bom"/>
       <property name="ki_description" value="Fiducial Marker"/>
       <property name="ki_keywords" value="fiducial marker"/>
       <sheetpath names="/" tstamps="/"/>
@@ -264,8 +266,10 @@
       <value>Fiducial</value>
       <footprint>Fiducial:Fiducial_1mm_Mask2mm</footprint>
       <libsource lib="Mechanical" part="Fiducial" description="Fiducial Marker"/>
+      <property name="UST_ID" value=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFASPDIMU02.kicad_sch"/>
+      <property name="exclude_from_bom"/>
       <property name="ki_description" value="Fiducial Marker"/>
       <property name="ki_keywords" value="fiducial marker"/>
       <sheetpath names="/" tstamps="/"/>
@@ -291,8 +295,10 @@
       <value>SolderJumper_3_Bridged12</value>
       <footprint>Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm</footprint>
       <libsource lib="Jumper" part="SolderJumper_3_Bridged12" description="3-pole Solder Jumper, pins 1+2 closed/bridged"/>
+      <property name="UST_ID" value=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFASPDIMU02.kicad_sch"/>
+      <property name="exclude_from_bom"/>
       <property name="ki_description" value="3-pole Solder Jumper, pins 1+2 closed/bridged"/>
       <property name="ki_keywords" value="Solder Jumper SPDT"/>
       <sheetpath names="/" tstamps="/"/>
@@ -302,8 +308,10 @@
       <value>SolderJumper_3_Bridged12</value>
       <footprint>Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm</footprint>
       <libsource lib="Jumper" part="SolderJumper_3_Bridged12" description="3-pole Solder Jumper, pins 1+2 closed/bridged"/>
+      <property name="UST_ID" value=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFASPDIMU02.kicad_sch"/>
+      <property name="exclude_from_bom"/>
       <property name="ki_description" value="3-pole Solder Jumper, pins 1+2 closed/bridged"/>
       <property name="ki_keywords" value="Solder Jumper SPDT"/>
       <sheetpath names="/" tstamps="/"/>
