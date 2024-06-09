@@ -3717,7 +3717,7 @@
   )
 
   (symbol (lib_id "MLAB_MECHANICAL:HOLE_TF") (at 241.3 19.05 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6a1a3ccd-1724-4179-80d3-24432094b541)
     (property "Reference" "M2" (at 242.6971 18.1624 0)
       (effects (font (size 1.524 1.524)) (justify left))
@@ -3730,6 +3730,9 @@
     )
     (property "Datasheet" "" (at 241.3 19.05 0)
       (effects (font (size 1.524 1.524)))
+    )
+    (property "UST_ID" "" (at 241.3 19.05 0)
+      (effects (font (size 1.27 1.27)) hide)
     )
     (instances
       (project "TFASPDIMU02"
@@ -4002,7 +4005,7 @@
   )
 
   (symbol (lib_id "MLAB_MECHANICAL:HOLE_TF") (at 266.065 19.05 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 93267269-2845-42f9-ad7b-3734adaa240a)
     (property "Reference" "M7" (at 267.4621 18.1624 0)
       (effects (font (size 1.524 1.524)) (justify left))
@@ -4015,6 +4018,9 @@
     )
     (property "Datasheet" "" (at 266.065 19.05 0)
       (effects (font (size 1.524 1.524)))
+    )
+    (property "UST_ID" "" (at 266.065 19.05 0)
+      (effects (font (size 1.27 1.27)) hide)
     )
     (instances
       (project "TFASPDIMU02"
@@ -4170,7 +4176,7 @@
   )
 
   (symbol (lib_id "MLAB_MECHANICAL:HOLE_TF") (at 254 19.05 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d7acd3a2-6454-4960-b9b7-defce1948121)
     (property "Reference" "M3" (at 255.3971 18.1624 0)
       (effects (font (size 1.524 1.524)) (justify left))
@@ -4183,6 +4189,9 @@
     )
     (property "Datasheet" "" (at 254 19.05 0)
       (effects (font (size 1.524 1.524)))
+    )
+    (property "UST_ID" "" (at 254 19.05 0)
+      (effects (font (size 1.27 1.27)) hide)
     )
     (instances
       (project "TFASPDIMU02"
@@ -4302,7 +4311,7 @@
   )
 
   (symbol (lib_id "MLAB_MECHANICAL:HOLE_TF") (at 228.6 19.05 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fc79bf5f-0ecf-4cae-a035-120c2c327676)
     (property "Reference" "M1" (at 229.9971 18.1624 0)
       (effects (font (size 1.524 1.524)) (justify left))
@@ -4315,6 +4324,9 @@
     )
     (property "Datasheet" "" (at 228.6 19.05 0)
       (effects (font (size 1.524 1.524)))
+    )
+    (property "UST_ID" "" (at 228.6 19.05 0)
+      (effects (font (size 1.27 1.27)) hide)
     )
     (instances
       (project "TFASPDIMU02"
