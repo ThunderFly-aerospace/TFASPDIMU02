@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/github/workspace/hw/sch_pcb/TFASPDIMU02.kicad_sch</source>
-    <date>Sun Jun  9 21:07:45 2024</date>
+    <date>Sun Jun  9 23:57:38 2024</date>
     <tool>Eeschema 7.0.11+1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -321,8 +321,10 @@
       <value>HOLE_TF</value>
       <footprint>Mlab_Mechanical:dira_3mm</footprint>
       <libsource lib="MLAB_MECHANICAL" part="HOLE_TF" description=""/>
+      <property name="UST_ID" value=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFASPDIMU02.kicad_sch"/>
+      <property name="exclude_from_bom"/>
       <property name="ki_keywords" value="HOLE, X, M"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>fc79bf5f-0ecf-4cae-a035-120c2c327676</tstamps>
@@ -331,8 +333,10 @@
       <value>HOLE_TF</value>
       <footprint>Mlab_Mechanical:dira_3mm</footprint>
       <libsource lib="MLAB_MECHANICAL" part="HOLE_TF" description=""/>
+      <property name="UST_ID" value=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFASPDIMU02.kicad_sch"/>
+      <property name="exclude_from_bom"/>
       <property name="ki_keywords" value="HOLE, X, M"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>6a1a3ccd-1724-4179-80d3-24432094b541</tstamps>
@@ -341,8 +345,10 @@
       <value>HOLE_TF</value>
       <footprint>Mlab_Mechanical:dira_3mm</footprint>
       <libsource lib="MLAB_MECHANICAL" part="HOLE_TF" description=""/>
+      <property name="UST_ID" value=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFASPDIMU02.kicad_sch"/>
+      <property name="exclude_from_bom"/>
       <property name="ki_keywords" value="HOLE, X, M"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>d7acd3a2-6454-4960-b9b7-defce1948121</tstamps>
@@ -351,8 +357,10 @@
       <value>HOLE_TF</value>
       <footprint>Mlab_Mechanical:dira_3mm</footprint>
       <libsource lib="MLAB_MECHANICAL" part="HOLE_TF" description=""/>
+      <property name="UST_ID" value=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFASPDIMU02.kicad_sch"/>
+      <property name="exclude_from_bom"/>
       <property name="ki_keywords" value="HOLE, X, M"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>93267269-2845-42f9-ad7b-3734adaa240a</tstamps>
