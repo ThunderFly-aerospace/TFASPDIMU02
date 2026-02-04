@@ -8,6 +8,28 @@ Komunikace po I2C se otestuje tím, že všechny z následující testy lze prov
 ### SDP3x senzor
 U airspeed senzoru se ověřuje, jestli při fouknutí do jedné z jeho trubiček se vytváří rozdíl tlaku. Toto měření je jen velmi orientační a zjišťuje funkčnost senzoru. Přesnější test je proveden ve finální aplikaci, kdy je senzor je vložen do odpovídajícího obalu. Tam se pak testuje i jeho dobré utěsnění. 
 
+```
+(.venv) TFASPDIMU02/sw/pymlab$ python3 test_suite.py 9 0
+{'port': 9, 'device': 'hid'}
+ID: 0x3010384 - sensor: SDP33 1500Pa
+Magnetometer not calibrated.
+
+0000; 2026-02-04T10:50:02.387614+00:00; Dp: +0.00 [Pa]; T: 29.467 [degC]; MAG_HDG: +56.41; SPD_W_DP: +0.00 [km/h]
+0000; 2026-02-04T10:50:02.521622+00:00; Dp: +0.00 [Pa]; T: 29.611 [degC]; MAG_HDG: +55.76; SPD_W_DP: +0.00 [km/h]
+0000; 2026-02-04T10:50:02.655617+00:00; Dp: +0.05 [Pa]; T: 29.563 [degC]; MAG_HDG: +55.50; SPD_W_DP: -0.08 [km/h]
+0000; 2026-02-04T10:50:02.789611+00:00; Dp: +0.00 [Pa]; T: 29.563 [degC]; MAG_HDG: +55.18; SPD_W_DP: +0.00 [km/h]
+0000; 2026-02-04T10:50:02.923609+00:00; Dp: +0.00 [Pa]; T: 29.372 [degC]; MAG_HDG: +55.25; SPD_W_DP: +0.00 [km/h]
+0000; 2026-02-04T10:50:03.057605+00:00; Dp: +0.00 [Pa]; T: 29.563 [degC]; MAG_HDG: +55.04; SPD_W_DP: +0.00 [km/h]
+0000; 2026-02-04T10:50:03.191574+00:00; Dp: -43.10 [Pa]; T: 29.563 [degC]; MAG_HDG: +54.88; SPD_W_DP: +2.36 [km/h]
+0000; 2026-02-04T10:50:03.325599+00:00; Dp: -77.60 [Pa]; T: 29.467 [degC]; MAG_HDG: +54.78; SPD_W_DP: +3.17 [km/h]
+0000; 2026-02-04T10:50:03.459580+00:00; Dp: -74.50 [Pa]; T: 29.611 [degC]; MAG_HDG: +54.74; SPD_W_DP: +3.11 [km/h]
+0000; 2026-02-04T10:50:03.593552+00:00; Dp: -100.25 [Pa]; T: 29.419 [degC]; MAG_HDG: +54.65; SPD_W_DP: +3.60 [km/h]
+0000; 2026-02-04T10:50:03.727543+00:00; Dp: -91.85 [Pa]; T: 29.563 [degC]; MAG_HDG: +54.57; SPD_W_DP: +3.45 [km/h]
+0000; 2026-02-04T10:50:03.861543+00:00; Dp: -136.35 [Pa]; T: 29.467 [degC]; MAG_HDG: +54.48; SPD_W_DP: +4.20 [km/h]
+0000; 2026-02-04T10:50:03.995534+00:00; Dp: -140.55 [Pa]; T: 29.611 [degC]; MAG_HDG: +55.69; SPD_W_DP: +4.27 [km/h]
+0000; 2026-02-04T10:50:04.129526+00:00; Dp: -132.70 [Pa]; T: 29.611 [degC]; MAG_HDG: +56.82; SPD_W_DP: +4.15 [km/h]
+```
+
 ### IMU jednotka
 U imu jednotky se ověřují hodnoty, které jsou měřeny. 
 

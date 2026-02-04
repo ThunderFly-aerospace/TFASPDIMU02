@@ -89,7 +89,7 @@ while True:
         dp, spd_from_dp = windgauge.get_dp_spd()
         temp = windgauge.get_temp()
 
-        ts = datetime.datetime.utcfromtimestamp(time.time()).isoformat()
+        ts = datetime.datetime.now(datetime.UTC).isoformat()
 
         # print ("Heading: %6.2f [deg]; Diff. P: %7.2f [Pa]; Speed from diff. P: %5.2f [km/h]" % (hdg_ma, dp, spd_from_dp))
         msg = ("%d;%s;%0.2f;%0.2f;%0.2f;%0.3f\n"% (log_index, ts, dp, hdg_ma, spd_from_dp, temp))
